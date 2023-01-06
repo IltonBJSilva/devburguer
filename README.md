@@ -31,7 +31,16 @@ pip freeze > requirements.txt
  django-admin startproject core .
  ``
 
-***Ligar o projeto Django - Python***
+***Quinta etapa ligar o projeto Django - Python***
 ``
 python .\manage.py runserver
  ``
+
+***Sexta etapa, criar um app do django***
+``
+ django-admin startapp burguer
+ ``
+ 
+Quando se cria uma aplicação a necessidade de registar o path em urls.py e tambem de registar a aplicação em settings.py
+
+Tambem criar um arquivo urls.py dentro da aplicação pois a mesma não vem criada e isso torna-se um processo manual de ser feito
