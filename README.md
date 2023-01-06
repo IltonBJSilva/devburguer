@@ -43,4 +43,8 @@ python .\manage.py runserver
  
 Quando se cria uma aplicação a necessidade de registar o path em urls.py e tambem de registar a aplicação em settings.py
 
+<<<<<<< HEAD
 Tambem criar um arquivo urls.py dentro da aplicação pois a mesma não vem criada e isso torna-se um processo manual de ser feito
+=======
+Tambem criar um arquivo urls.py dentro da aplicação pois a mesma não vem criada e isso torna-se um processo manual de ser feito
+>>>>>>> origin/master
