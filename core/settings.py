@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 #O Django vai criar
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join('burguer/static', 'staticfiles')
 STATICFILES_DIRS = [
     #Eu crio, pasta fisica
     os.path.join(BASE_DIR, 'static')
