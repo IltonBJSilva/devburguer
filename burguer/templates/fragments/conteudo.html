@@ -12,83 +12,24 @@
 <div class="row my-3">
 	<div class="col-md-10 offset-1">
 		<div class="row row-cols-1 row-cols-md-3 g-4">
+			{% for produto in produtos %}
 			
 			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}" alt="hamburguer">
+				<div class="card bg-warning p-5" style="height: 650px">
+					<a href="{% url 'produtos' produto.id %}">
+						<img src="{{ produto.imagem.url }}" class="card-img-top" alt="hamburguer">
+					</a>
 					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 01 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
+						<h5 class="card-title text-danger">{{ produto.nome }}</h5>
+						<p class="card-text"> {{ produto.descricao }} </p>
 					</div>
-					
-					<div class="span display-4 text-end mx-3 text-danger">R$25,99</div>
-					
-				</div>
-			</div>
-			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}">
-					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 02 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
-					</div>
-					<div class="span display-4 text-end mx-3 text-danger">R$24,21</div>
-
-				</div>
-			</div>
-			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}">
-					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 03 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
-					</div>
-					<div class="span display-4 text-end mx-3 text-danger">R$22,32</div>
-
+					<div class="span display-4 text-end mx-3 text-danger">R${{ produto.preco }}</div>
 				</div>
 			</div>
 			
-			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}">
-					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 04 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
-					</div>
-					<div class="span display-4 text-end mx-3 text-danger">R$29,99</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}">
-					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 05 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
-					</div>
-					<div class="span display-4 text-end mx-3 text-danger">R$23,99</div>
-
-				</div>
-			</div>
-			
-			<div class="col">
-				<div class="card bg-warning">
-					<img src="{% static 'burguer/burguer_slide.png' %}">
-					<div class="card-body">
-						<h5 class="card-title text-danger">Card title 06 </h5>
-						<p class="card-text"> This is a longer card with supporting text below as a
-							netural lead-in to additional content. This content is a little bit</p>
-					</div>
-					<div class="span display-4 text-end mx-3 text-danger">R$21,99</div>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
-
 </div>
 </div>
 </div>

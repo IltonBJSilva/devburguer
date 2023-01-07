@@ -2,8 +2,21 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-	return render(request, 'burguer/home.html')
+from burguer.models import Produto
 
-def detalhe_produto(request):
-	return render(request, 'burguer/produto.html')
+
+def home(request):
+
+	#Recuperar dados apartir do banco de dados
+	produtos = Produto.objects.all()
+	context = {
+		'produtos':produtos
+	}
+	return render(request, 'burguer/home.html', context)
+
+def detalhe_produto(request, produto_id):
+	produto = Produto.objects.get(pk=produto_id)
+	context = {
+		'produto': produto
+	}
+	return render(request, 'burguer/produto.html',context)
