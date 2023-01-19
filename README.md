@@ -1,3 +1,4 @@
+
 # Dev Burguer!
 
 Um projeto criado a fim de praticar praticas de desenvolvimento de software frontend e backend onde estarei documentando cada etapa
@@ -44,4 +45,16 @@ python .\manage.py runserver
 Quando se cria uma aplicação a necessidade de registar o path em urls.py e tambem de registar a aplicação em settings.py
 
 Tambem criar um arquivo urls.py dentro da aplicação pois a mesma não vem criada e isso torna-se um processo manual de ser feito
+~~_____________________________________________________________________________~~
 
+## Screenshot
+
+#### Tela Principal![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer.png?raw=true)
+
+
+#### Produtos![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2002.png?raw=true)
+
+#### Descrição do Produto![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2004.png?raw=true)
+
+#### Produtos com preço
+![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2003.png?raw=true)
