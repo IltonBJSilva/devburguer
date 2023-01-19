@@ -10,8 +10,7 @@ O princípio DRY ("não se repita") busca reduzir a duplicação de código e os
 
 DRY é uma abreviação para o inglês  _Don't Repeat Yourself_, "Não se Repita". É o primeiro princípio do desenvolvimento de software mencionado por Andy Hunt e Dave Thomas no clássico livro  [O Programador Pragmático: de aprendiz a mestre](http://en.wikipedia.org/wiki/The_Pragmatic_Programmer).
 
-~~_____________________________________________________________________________~~
-
+_______________________________________________________________________________________________________________________________________________________________________
 ***Primeira etapa eu criei uma virtual environment***
 ``
 python -m venv venv
@@ -45,16 +44,19 @@ python .\manage.py runserver
 Quando se cria uma aplicação a necessidade de registar o path em urls.py e tambem de registar a aplicação em settings.py
 
 Tambem criar um arquivo urls.py dentro da aplicação pois a mesma não vem criada e isso torna-se um processo manual de ser feito
-~~_____________________________________________________________________________~~
+_______________________________________________________________________________________________________________________________________________________________________
 
 ## Screenshot
+Imagens relacionado ao projeto final
 
-#### Tela Principal![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer.png?raw=true)
+
+### Tela Principal![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer.png?raw=true)
 
 
-#### Produtos![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2002.png?raw=true)
+### Produtos![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2002.png?raw=true)
 
-#### Descrição do Produto![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2004.png?raw=true)
 
-#### Produtos com preço
-![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2003.png?raw=true)
+### Descrição do Produto![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2004.png?raw=true)
+
+
+### Produtos com preço![enter image description here](https://github.com/IltonBJSilva/devburguer/blob/master/static/images/burguer/screenshot/devburguer%2003.png?raw=true)
